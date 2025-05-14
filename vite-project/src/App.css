@@ -4,39 +4,58 @@
   padding: 2rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.container{
+  border: 2px solid;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.574);
+  background-color: #3c3c3c;
+  border-radius: 10px;
+  width: 80VW;
+  transition: all 0.3s ease-in-out;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.container:hover{
+ transform: scale(1.1);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container p:hover, .container h2:hover{
+ transform: scale(1.2);
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container p, h2 {
+  transition: all 0.3s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.ProfPic {
+border-radius: 50%;
+width: 300px;
+height: 300px;
+object-fit: cover;
 }
 
-.card {
-  padding: 2em;
+.CRTs {
+  /* border: 4px dashed; */
+  display: flex;
+  gap: 2vw;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  /* align-items: center; */
+}
+.CRTinfos {
+  margin-right: 10vw;
+  /* border: 2px dashed; */
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* flex-wrap: wrap; */
+}
+.CRTinfos p {
+  margin: 0px 0px;
 }
 
-.read-the-docs {
-  color: #888;
+.CRTinfos hr {
+  background-color: white;
+  width: 110%;
+  height: 2px;
+}
+.Name {
+  font-size: 2em;
 }
