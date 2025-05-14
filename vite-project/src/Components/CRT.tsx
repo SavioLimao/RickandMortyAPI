@@ -6,9 +6,8 @@ export default function CRT(props) {
       <div className="container">
           <div className="CRTs">
             <img className="ProfPic"
-              src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-              alt=""
-            />
+              src={props.pic}
+              alt=""/>
             <section className="CRTinfos">
               <h2 className="Name" id="Name">
                 {props.name}
@@ -22,7 +21,7 @@ export default function CRT(props) {
               {props.species}
               </p>
               <p><strong>Origin: </strong>
-              {props.origin} (C-137)</p>
+              {props.origin}</p>
             </section>
           </div>
       </div>

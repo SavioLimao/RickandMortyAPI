@@ -6,11 +6,13 @@
 }
 .container{
   border: 2px solid;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.574);
+  box-shadow: 10px 10px 30px #00000092;
   background-color: #3c3c3c;
   border-radius: 10px;
   width: 80VW;
+  max-width: 60vw;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 2vh;
 }
 .container:hover{
  transform: scale(1.1);
@@ -24,8 +26,8 @@
 
 .ProfPic {
 border-radius: 50%;
-width: 300px;
-height: 300px;
+width: 200px;
+height: 200px;
 object-fit: cover;
 }
 
@@ -39,21 +41,27 @@ object-fit: cover;
   /* align-items: center; */
 }
 .CRTinfos {
-  margin-right: 10vw;
+  margin-right: 5vw;
   /* border: 2px dashed; */
   text-align: end;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  /* align-items: flex-end; */
+
+  /* border: 4px dashed; */
   /* flex-wrap: wrap; */
 }
 .CRTinfos p {
-  margin: 0px 0px;
+  margin: 0 0 1vh 0;
+}
+.CRTinfos h2 {
+  margin: 1vh 0 0 0;
 }
 
 .CRTinfos hr {
   background-color: white;
-  width: 110%;
+  margin-left: 3vw;
+  width: 90%;
   height: 2px;
 }
 .Name {
